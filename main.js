@@ -1,13 +1,10 @@
 // tady je místo pro náš program  
 
 
-let nadpis = document.querySelector("h1");
-
-
+let lev = document.querySelector(".lev");
 
 function priNajeti() {
-    nadpis.classList.toggle("hover");
-    lev.classList.toggle("bold");
+    lev.classList.add("bold");
 }
 
 function poStisknuti(udalost) {
@@ -20,6 +17,8 @@ function startAudio() {
     audioFile.play();
 }
 
-let lev = document.querySelector(".lev");
+function poKliknuti(){
+    lev.classList.toggle("color-change");
+}
 
 

@@ -133,3 +133,7 @@ li {
 .bold {
   font-weight: bold;
 }
+
+.color-change {
+  color: red;
+}
