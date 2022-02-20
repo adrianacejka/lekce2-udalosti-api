@@ -38,7 +38,7 @@ function pauseAudio() {
 
 function lowVolume() {
     console.log("Ticho...");
-    audioFile.volume = 0;
+    audioFile.volume = 0.05;
 }
 
 function okVolume() {
