@@ -11,11 +11,10 @@ function poStisknuti(udalost) {
     console.log(udalost.key);
 }
 
-
-
 function poKliknutiCerveny() {
     lev.classList.toggle("color-change");
 }
+
 
 let size = 16;
 
@@ -24,7 +23,8 @@ function poKliknutiVetsi() {
     lev.style.fontSize = size + 'px';
 }
 
-    let audioFile = document.querySelector("#zvukovaStopa");
+
+let audioFile = document.querySelector("#zvukovaStopa");
 
 function startAudio() {
     console.log("Zapínám píseň...");

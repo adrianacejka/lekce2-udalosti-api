@@ -15,119 +15,36 @@ html {
 
 body {
   margin: 0;
-  padding: 50px;
+  padding: 0;
   font: 18px/1.5 sans-serif;
   background-color: white;
   color: black;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", serif;
-}
-
-.hover {
-  color: pink;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1 {
-  font-size: 36px;
-  display: inline;
-}
-
-img {
-  margin: 30px 0;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-.napoveda {
-  margin-top: 50px;
-  padding: 20px;
-  border: 1px dashed tomato;
-  background-color: #f5f5f5;
-}
-
-.ctverecek {
-  width: 150px;
-  height: 150px;
+  font-size: 40px;
   text-align: center;
-  line-height: 150px;
-  background-color: yellow;
-  border: 1px solid black;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+  color: #183a26;
+  font-weight: 900;
 }
 
-.tlacitko {
-  display: inline-block;
-  font-family: Monserrat, sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  text-shadow: 1px 1px 0px #c5376d;
-  padding: 10px 30px;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background: #f78db5;
-  background-image: linear-gradient(to bottom right, #f78db5 0%, #ef5a92 100%);
-  border-radius: 5px;
-  box-shadow: 0px 5px 0px 0px #c5376d, 0px 10px 5px rgb(218, 215, 215);
-}
-
-.tlacitko:active {
-  top: 3px;
-  box-shadow: 0px 2px 0px 0px #c5376d, 0px 5px 3px #999;
+.sekce {
+  background-color: rgb(240, 238, 221);
+  padding: 30px 0;
 }
 
 .obrazek {
   display: block;
-  margin: 50px 0;
-}
-
-.ctverecek {
-  margin: 50px 0;
-  width: 200px;
-  height: 200px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 120px;
-  font-weight: bold;
-  line-height: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid;
+  margin: 40px auto;
   border-radius: 10px;
-}
-
-.zluty {
-  background-color: yellow;
-  color: red;
-  border-color: orange;
-}
-
-.zeleny {
-  background-color: greenyellow;
-  color: black;
-  border-color: green;
-}
-
-.aktivni {
-  background-color: cyan;
-  color: black;
-  border-color: blue;
 }
 
 .lev {
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .bold {
@@ -136,4 +53,53 @@ li {
 
 .color-change {
   color: red;
+}
+
+.obdelnik-lev {
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  background-color: white;
+}
+
+.buttons-lev {
+  margin: 0 auto;
+  display: flex;
+  width: 50%;
+  gap: 30px;
+  justify-content: center;
+}
+
+.button-lev {
+  background-color: black;
+  color: white;
+  margin-left: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.audio-buttons-container {
+  margin: 40px auto;
+  display: inline-block;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-transform: lowercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.603) 0px 1px 4px;
 }
