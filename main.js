@@ -13,12 +13,20 @@ function poStisknuti(udalost) {
 
 function startAudio() {
     let audioFile = document.querySelector("#zvukovaStopa");
-    console.log("Zpínám píseň...")
+    console.log("Zapínám píseň...");
     audioFile.play();
 }
 
-function poKliknuti(){
+function poKliknutiCerveny() {
     lev.classList.toggle("color-change");
 }
 
+
+let size = 16;
+
+function poKliknutiVetsi() {
+    size = size + 1;
+    lev.style.fontSize = size + 'px';
+    console.log(lev.style.fontSize);
+}
 
