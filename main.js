@@ -24,14 +24,34 @@ function poKliknutiVetsi() {
     lev.style.fontSize = size + 'px';
 }
 
-function startAudio() {
     let audioFile = document.querySelector("#zvukovaStopa");
+
+function startAudio() {
     console.log("Zapínám píseň...");
     audioFile.play();
 }
 
-function pauseAudio() {
-    let audioFile = document.querySelector("#zvukovaStopa");
+function pauseAudio() {  
     console.log("Pauza");
     audioFile.pause();
+}
+
+function lowVolume() {
+    console.log("Ticho...");
+    audioFile.volume = 0;
+}
+
+function okVolume() {
+    console.log("Zvuk tak akorát...");
+    audioFile.volume = 0.5;
+}
+
+function heighVolume() {
+    console.log("Tohle fakt řve...");
+    audioFile.volume = 1;
+}
+
+function fromStart() {
+    console.log("Pouštím od začátku...");
+    audioFile.currentTime = "0";
 }
