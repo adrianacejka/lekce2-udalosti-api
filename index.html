@@ -22,20 +22,32 @@
 		Větší po kliknutí
 	</button>
 
-	<div class="ctverecek zluty"></div>
-
-	<div class="ctverecek zeleny"></div>
-
 	<img class="obrazek" src="obrazky/kocka.jpg">
-
-	<button class="tlacitko">Čudlajs</button>
-
-	
 
 	<audio id="zvukovaStopa" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
-	<button class="tlacitko" onclick="startAudio()">
-		Zapni píseň
+	<button onclick="startAudio()">
+		Přehraj
+	</button>
+
+	<button onclick="pauseAudio()">
+		Pauza
+	</button>
+
+	<button onclick="lowVolume()">
+		Ztišit
+	</button>
+
+	<button onclick="okVolume()">
+		Hlasitost tak akorát
+	</button>
+
+	<button onclick="heighVolume()">
+		Nejvíc nahlas
+	</button>
+
+	<button onclick="fromStartAudio()">
+		Pustit od začátku
 	</button>
 
 	<script type="text/javascript" src="main.js"></script>

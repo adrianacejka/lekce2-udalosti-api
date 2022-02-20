@@ -11,22 +11,27 @@ function poStisknuti(udalost) {
     console.log(udalost.key);
 }
 
-function startAudio() {
-    let audioFile = document.querySelector("#zvukovaStopa");
-    console.log("Zapínám píseň...");
-    audioFile.play();
-}
+
 
 function poKliknutiCerveny() {
     lev.classList.toggle("color-change");
 }
-
 
 let size = 16;
 
 function poKliknutiVetsi() {
     size = size + 1;
     lev.style.fontSize = size + 'px';
-    console.log(lev.style.fontSize);
 }
 
+function startAudio() {
+    let audioFile = document.querySelector("#zvukovaStopa");
+    console.log("Zapínám píseň...");
+    audioFile.play();
+}
+
+function pauseAudio() {
+    let audioFile = document.querySelector("#zvukovaStopa");
+    console.log("Pauza");
+    audioFile.pause();
+}
